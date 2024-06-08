@@ -34,6 +34,8 @@
     </p>
   </article>
 
+  <hr>
+
   <article class="py-5 max-w-screen-md border-b border-gray-300">
     <h3 class="mb-2 text-2xl tracking-tight font-bold text-gray-800">Wuthering Waves: Siap Berpetualang di Dunia Terbuka yang Menakjubkan!</h3>
     <div class="text-base text-gray-500">
