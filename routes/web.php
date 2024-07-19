@@ -18,7 +18,6 @@ Route::get('/blogs', function () {
 });
 
 Route::get('/blogs/{slug}', function($slug) {
-   
         $blog = Blog::find($slug);
 
         return view('blog', ['title' => 'Single Blog', 'blog' => $blog]);
