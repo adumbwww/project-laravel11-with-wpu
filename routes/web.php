@@ -13,12 +13,12 @@ Route::get('/about', function () {
     return view ('about', ['title' => 'About']);
 });
 
+
 Route::get('/blogs', function () {
     return view ('blogs', ['title' => 'Blog', 'blogs' => Blog::all()]);
 });
 
-Route::get('/blogs/{id}', function($id) {
-        $blog = Blog::find($id);
+Route::get('/blogs/{blog:slug}', function(Blog $blog) {
         return view('blog', ['title' => 'Single Blog', 'blog' => $blog]);
 });
 
