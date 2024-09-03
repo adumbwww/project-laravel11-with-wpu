@@ -12,4 +12,3 @@
     <a href="/blogs" class="font-medium text-gray-500 hover:underline">Back &laquo;</a>
   </article>
 </x-layout>
-        
