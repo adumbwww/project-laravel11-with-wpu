@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Blog;
+use App\Models\User;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,10 @@ Route::get('/blogs', function () {
 
 Route::get('/blogs/{blog:slug}', function(Blog $blog) {
         return view('blog', ['title' => 'Single Blog', 'blog' => $blog]);
+});
+
+Route::get('/authors/{user}', function(User $user) {
+    return view('blogs', ['title' => 'Articles By' . $user->name, 'blogs' => $user->blogs]);
 });
 
 Route::get('/contact', function () {
