@@ -24,7 +24,7 @@ class BlogFactory extends Factory
             'author_id' => User::factory(),
             'category_id' => Category::factory(),
             'slug' => Str::slug(fake()->sentence()),
-            'body' => fake()->text(),
+            'body' => fake()->text(1000),
         ];
     }
 }
