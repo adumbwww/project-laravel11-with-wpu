@@ -9,9 +9,9 @@
                   <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                       <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
                       <div>
-                          <a href="/authors/{{ $blog->author->username }}" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $blog->author->name }}</a>
+                          <a href="/blogs?author={{ $blog->author->username }}" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $blog->author->name }}</a>
                           <p class="text-base text-gray-500 dark:text-gray-400" mb-1>{{ $blog->created_at->diffForHumans() }}</p>
-                            <a href="/categories/{{ $blog->category->slug }}">
+                            <a href="/blogs?category={{ $blog->category->slug }}">
                             <span class="bg-{{ $blog->category->color }}-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                                   {{ $blog->category->name }}
                             </span>
